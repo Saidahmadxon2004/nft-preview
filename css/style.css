@@ -1,0 +1,211 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* outfit-300 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/outfit-v6-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/outfit-v6-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/outfit-v6-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/outfit-v6-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/outfit-v6-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/outfit-v6-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  width: 100%;
+  font-size: 62.5%;
+}
+body {
+  background-color: #0d192c;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+
+  /* Soft Blue */
+
+  color: #8bacd9;
+}
+.container {
+  margin-top: 152px;
+  padding-top: 2.4rem;
+  width: 100%;
+  max-width: 350px;
+  height: 596px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background: #15263f;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+.img-bg {
+  position: relative;
+  width: 302px;
+  height: 302px;
+  background-image: url("../img/Rectangle\ Copy.png");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.img-bg:hover .img-innerbg {
+  display: block;
+}
+.img-innerbg {
+  display: none;
+  position: absolute;
+  top: 136px;
+  left: 129px;
+  width: 40px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-image: url("../img/Shape.png");
+  background-position: center;
+}
+.img-bg:hover {
+  background-image: linear-gradient(
+      rgba(0, 255, 248, 0.5),
+      rgba(0, 255, 248, 0.5)
+    ),
+    url("../img/Rectangle\ Copy.png");
+}
+.nft-title {
+  padding-top: 2.4rem;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  transition: 0.5s;
+  /* identical to box height */
+
+  /* White */
+
+  color: #ffffff;
+}
+.nft-title:hover {
+  color: #00fff8;
+}
+.nft {
+  display: flex;
+  align-items: center;
+}
+.nft-disc {
+  padding-top: 1.6rem;
+}
+.nft-info {
+  display: flex;
+  align-items: center;
+  margin-right: 11.2rem;
+}
+.nft-info-disc {
+  margin-left: 6.5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Cyan */
+
+  color: #00fff8;
+}
+
+.nft-info-discs {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Soft Blue */
+
+  margin-left: 7.7px;
+  color: #8bacd9;
+}
+.nft-infos {
+  display: flex;
+  align-items: center;
+}
+.divider {
+  width: 302px;
+  height: 1px;
+  border: 0;
+  background: #2e405a;
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-img {
+}
+.user-disc1 {
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-right: 5px;
+
+  /* Soft Blue */
+
+  color: #8bacd9;
+}
+.user-disc2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* White */
+
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 327px;
+    height: 543px;
+    margin-top: 6.2rem;
+  }
+  .img-bg {
+    width: 278px;
+    height: 278px;
+  }
+  .nft-info {
+    margin-right: auto;
+  }
+  .nft-info-disc {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .nft-info-discs {
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .divider {
+    width: 278px;
+  }
+  .user-disc1,
+  .user-disc2 {
+    font-size: 1.5rem;
+    line-height: 1.9px;
+  }
+}
